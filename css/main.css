@@ -1,0 +1,818 @@
+﻿html{
+    box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Besom 2';
+	src: url('../fonts/Besom/Besom.eot');
+	src: local('../fonts/Besom/Besom by Krisjanis Mezulis / RIT CREATIVE'), local('Besom'),
+		url('../fonts/Besom/Besom.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Besom/Besom.woff') format('woff'),
+		url('../fonts/Besom/Besom.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+  font-family: 'CoreSansE-85Heavy';
+  src: url('../fonts/Coresans/CoreSansE-85Heavy.eot');
+  src: url('../fonts/Coresans/CoreSansE-85Heavy.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Coresans/CoreSansE-85Heavy.svg#CoreSansE-85Heavy') format('svg'),
+       url('../fonts/Coresans/CoreSansE-85Heavy.ttf') format('truetype'),
+       url('../fonts/Coresans/CoreSansE-85Heavy.woff') format('woff'),
+       url('../fonts/Coresans/CoreSansE-85Heavy.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CoreSansE-65Bold';
+  src: url('../fonts/Coresans/CoreSansE-65Bold.eot');
+  src: url('../fonts/Coresans/CoreSansE-65Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Coresans/CoreSansE-65Bold.svg#CoreSansE-65Bold') format('svg'),
+       url('../fonts/Coresans/CoreSansE-65Bold.ttf') format('truetype'),
+       url('../fonts/Coresans/CoreSansE-65Bold.woff') format('woff'),
+       url('../fonts/Coresans/CoreSansE-65Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CoreSansE-55Medium';
+  src: url('../fonts/Coresans/CoreSansE-55Medium.eot');
+  src: url('../fonts/Coresans/CoreSansE-55Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Coresans/CoreSansE-55Medium.svg#CoreSansE-55Medium') format('svg'),
+       url('../fonts/Coresans/CoreSansE-55Medium.ttf') format('truetype'),
+       url('../fonts/Coresans/CoreSansE-55Medium.woff') format('woff'),
+       url('../fonts/Coresans/CoreSansE-55Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CoreSansE-45Regular';
+  src: url('../fonts/Coresans/CoreSansE-45Regular.eot');
+  src: url('../fonts/Coresans/CoreSansE-45Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Coresans/CoreSansE-45Regular.svg#CoreSansE-45Regular') format('svg'),
+       url('../fonts/Coresans/CoreSansE-45Regular.ttf') format('truetype'),
+       url('../fonts/Coresans/CoreSansE-45Regular.woff') format('woff'),
+       url('../fonts/Coresans/CoreSansE-45Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CoreSansE-95Black';
+  src: url('../fonts/Coresans/CoreSansE-95Black.eot');
+  src: url('../fonts/Coresans/CoreSansE-95Black.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Coresans/CoreSansE-95Black.svg#CoreSansE-95Black') format('svg'),
+       url('../fonts/Coresans/CoreSansE-95Black.ttf') format('truetype'),
+       url('../fonts/Coresans/CoreSansE-95Black.woff') format('woff'),
+       url('../fonts/Coresans/CoreSansE-95Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;  
+}
+ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+h1{
+    color: #f00;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 68px;
+    font-family: 'CoreSansE-95Black';
+    font-variant-caps: all-petite-caps;
+}
+.daet-wrap-end h2, ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.header-wrap{
+    display: flex;
+    justify-content: center;
+    height: 960px;
+    width: 100%;
+    background-image: url(../img/backgr-sparta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+.container{
+    width: 1133px;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header-top li:nth-child(3){
+    font-size: 24px;
+    margin-top: 50px;
+    color: #fff;
+    font-family: 'CoreSansE-55Medium';
+}
+.sparta-logo{
+    margin-top: 20px;
+}
+.speckurs{
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    width: 350px;
+    color: #fff;
+    background-image: url(../img/backgr-spec.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 350px 9px; 
+    font-family: 'CoreSansE-45Regular';
+}
+.slogon-sparta{
+    width: 515px;
+    margin-bottom: 20px;
+    color: #fff; 
+    font-size: 68px; 
+    font-family: 'CoreSansE-95Black';
+    margin-top: 191px;
+}
+.slogon-sparta p{
+    margin-top: 0;
+}
+.slogon-sparta span{ 
+    font-size: 180px;
+    color: #f00;
+    font-family: 'Besom 2';
+    line-height: .5;
+}
+.days-container{
+    height: 200px;
+}
+.days-wrap{
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+}
+
+.days{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/backgr-days.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: space-between;
+}
+.days p {
+    font-size: 14.4px;
+    font-weight: 700;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-family: 'CoreSansE-95Black';
+    
+}
+.days-3{
+    margin-left: 40px;
+    width: 100px;
+    color: #fff;
+}
+.trai, .send{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 35px;
+    width: 300px;
+    height: 75px;
+    background-image: url(../img/backgr-trai.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'CoreSansE-95Black';
+    
+}
+.jdet{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    font-size: 68px;
+    color: #f00;
+    margin-bottom: 150px;
+}
+
+.main-container-jdet ul{
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/backgr-jdet.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main-container-jdet li{
+    height: 280px;
+    display: flex;
+    flex-direction: row; 
+}
+.main-container-jdet li:nth-child(2),.main-container-jdet li:nth-child(4){
+    justify-content: flex-end;
+}
+.jdet-wrap{
+    padding-top: 80px;
+    width: 300px;
+}
+.jdet-wrap h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #4c4c4c;
+    font-family: 'CoreSansE-65Bold';
+}
+.jdet-wrap p{
+    font-size: 16px;
+    color: #4c4c4c;
+    font-family: 'CoreSansE-45Regular';
+}
+.daet-container {
+    margin-top: 180px;
+    height: 900px;
+    background-image: url(../img/backgr-daet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 180px;
+    
+}
+.daet-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.daet-wrap-start{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    background-image: url(../img/daet-ramka.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+.daet-container li{
+    width: 300px;
+    
+    
+}
+.daet-container li:nth-child(1){
+    height: 330px; 
+    width: 400px;
+    
+}
+.daet-container li:nth-last-child(2n){
+    height: 150px;
+}
+.img-daet{
+    background-image: url(../img/daet-img.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+}
+.daet-cont-start{
+    padding-top: 54px;
+    color: #fff;
+}
+.daet-wrap-start li:nth-child(2){
+    width: 215px;
+}
+.daet-wrap-start h3{
+    font-family: 'Besom 2';
+    font-size: 72px;
+    color: #5d6166;
+    margin: 0;  
+}
+.daet-wrap-start h2{
+    font-family: 'CoreSansE-65Bold';
+    font-size: 20px;
+    margin-top: 10px;
+}
+.daet-wrap-start p{
+    font-family: 'CoreSansE-45Regular';
+}
+.daet-wrap-start li:nth-child(3){
+    margin-right: 40px;
+    width: 288px;
+}
+.img-daet h2{
+    padding-top: 80px;
+    padding-left: 90px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'CoreSansE-95Black';
+    
+}
+.daet-wrap-end{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    height: 150px;
+}
+.daet-wrap-end li:nth-child(1){
+    width: 130px;
+}
+.daet-wrap-end li:nth-child(2){
+    color: #fff;
+    font-size: 36px;
+    width: 220px;
+    font-family: 'CoreSansE-95Black';
+}
+.daet-wrap-end li:nth-child(3){
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #fff;
+}
+.daet-wrap-end h2{
+    font-family: 'CoreSansE-65Bold';
+}
+.daet-wrap-end p{
+    font-family: 'CoreSansE-45Regular';
+}
+.daet-wrap-end li:nth-child(4){
+    width: 250px;
+    margin-right: 30px;
+    margin-top: 30px;
+    color: #fff;
+}
+.daet-wrap-end li:nth-child(4) p{
+    padding-right: 60px;
+    margin-bottom: 0;
+    
+}
+.uznaesh h2{
+    font-size: 20px;
+    color: #5d5d5d;
+    font-family: 'CoreSansE-65Bold';
+}
+.uznaesh p{
+    color: #878787;
+    font-family: 'CoreSansE-45Regular';
+}
+.uznaesh-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    height: 660px;
+}
+.uznaesh-article-1 p{
+    margin: 0;
+}
+.uznaesh-article-1,.uznaesh-article-2,.uznaesh-article-3,.uznaesh-article-4,.uznaesh-article-5{
+    display: flex;
+    flex-direction: row;
+}
+.uznaesh-article-2{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.uznaesh-article-4{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.uznaesh-container img{
+    margin-right: 50px;
+}
+.uznaesh-wrap{
+    width: 290px;    
+}
+.takje{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.takje-z{
+    font-size: 46px;
+    width: 613px;
+    margin-bottom: 78px;
+}
+.takje ul{
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/backgr-takje.png);
+    background-position: top;
+    background-size: 1028px;
+    background-repeat: no-repeat;
+    width: 1220px;
+    font-family: 'CoreSansE-45Regular';
+}
+.takje li:nth-child(1){
+    width: 137px;
+    margin-left: 105px;
+}
+.takje li:nth-child(2){
+    width: 169px;
+    margin-left: 75px;
+}
+.takje li:nth-child(3){
+    width: 146px;
+    margin-left: 80px;
+}
+.takje li:nth-child(4){
+    width: 182px;
+    margin-left: 80px;
+}
+.takje li:nth-child(5){
+    width: 121px;
+    margin-left: 110px;
+    
+}
+.takje p:nth-child(1){
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-family: 'CoreSansE-85Heavy';
+}
+
+.takje p:nth-child(2),.takje p:nth-child(3){
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.ispitai{
+    display: flex;
+    justify-content: center;    
+    height: 350px;
+    background-image: url(../img/backgr-ispitai.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ispitai-wrap ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 80px;
+    width: 1140px;
+    justify-content: center;
+}
+.ispitai-wrap h2{
+    font-size: 100.7px;
+    color: #f00;
+    font-family: 'Besom 2'; 
+    line-height: .4;
+    margin-right: 50px;
+    margin-left: 80px;
+}
+.ispitai-wrap p{
+    color: #fff;
+    font-size: 41px;
+    margin-bottom: 0;
+    font-family: 'CoreSansE-95Black';
+    padding-right: 100px;
+    width: 250px;
+}
+
+.ispitai-wrap a{
+    margin-top: 60px;
+    
+}
+.preobretesh{
+    height: 820px;
+    background-image: url(../img/backgr-preobretesh.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;   
+    background-size: 860px;
+}
+
+.preobretesh-wrap{
+    background-image: url(../img/backgr-preobretesh-dot.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 850px;
+    height: 700px;
+    width: 660px; 
+    font-family: 'CoreSansE-45Regular';
+}
+.preobretesh-wrap li:nth-child(1){
+    width: 121px;
+    padding-top: 35px;
+    margin-left: 130px;
+}
+.preobretesh-wrap li:nth-child(2){
+    width: 200px;
+    margin-top: 75px;
+    margin-left: 230px;
+}
+.preobretesh-wrap li:nth-child(3){
+    width: 175px;
+    margin-top: 70px;
+    margin-left: 290px;
+}
+.preobretesh-wrap li:nth-child(4){
+    width: 217px;
+    margin-top: 105px;
+    margin-left: 330px;
+}
+.preobretesh-wrap li:nth-child(5){
+    width: 218px;
+    margin-top: 90px;
+    margin-left: 350px;
+}
+.preobretesh-wrap li:nth-child(5) p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.programa{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.programa-wrap{
+    width: 1070px;
+    height: 630px;
+    background-image: url(../img/backgr-programa.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.programa-wrap ul{
+    height: 300px;
+    width: 450px;
+    margin-top: 132px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.programa-wrap li{
+    display: flex;
+    flex-direction: row;
+}
+.programa-wrap p:nth-child(1){
+    margin-right: 20px;
+    font-family: 'Besom 2';
+    font-size: 30px;
+    margin-top: 15px;
+    color: #f00;
+}
+.programa-wrap p:nth-child(2){
+    font-family: 'CoreSansE-45Regular';
+}
+
+.programa-wrap li:nth-child(1){
+    width: 334px;
+    height: 80px;
+    margin-right: 138px;
+}
+.programa-wrap li:nth-child(2){
+    width: 200px;
+    height: 40px;
+}
+.programa-wrap li:nth-child(3){
+    width: 250px;
+    height: 40px;
+}
+.programa-wrap li:nth-child(4){
+    width: 355px;
+    margin-bottom: 50px;
+    height: 80px;
+}
+.programa-wrap li:nth-child(5){
+    width: 185px;
+    height: 40px;
+}
+.programa-wrap li:nth-child(6){
+    width: 270px;
+    height: 40px;
+}
+.programa-wrap li:nth-child(7){
+    width: 171px;
+    height: 40px;
+}
+.programa-wrap li:nth-child(8){
+    width: 320px;   
+    height: 40px;
+}
+.programa-wrap li:nth-child(9){
+    width: 296px;
+    height: 40px;
+}
+.programa-end{
+    display: flex;
+    flex-direction: row;
+}
+.programa-end h2{
+    color: #f00;
+    font-family: 'Besom 2';
+    font-size: 87px;
+    margin-left: 100px;
+    margin-top: 0;
+}
+.programa-end a{
+    
+    margin-left: 60px;
+}
+.imag{
+    height: 450px;
+    background-image: url(../img/back-people.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.instructor-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.instructor-wrap h2{
+    color: #f00;
+    font-family: 'CoreSansE-45Regular';
+}
+.instructor-wrap ul:nth-child(2){
+    background-image: url(../img/back-bloodp1.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    height: 279px;
+}
+.instructor-wrap  p{
+    margin-left: 60px;
+    font-family: 'CoreSansE-45Regular';
+}
+.instructor-wrap ul:nth-child(3){
+    margin-top: 55px;
+    background-image: url(../img/back-bloodp2.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    width: 343px;
+}
+.instructor-wrap li:nth-child(3){
+    width: 332px;
+    
+}
+.instructor-wrap-end{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+.instructor-wrap-end ul{
+    display: flex;
+    justify-content: center;
+    width: 1058px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.instructor-wrap-end li{
+    width: 160px;
+    margin-right: 100px;
+    margin-left: 50px;  
+}
+.instructor-wrap-end span{
+    color: #f00;
+    font-family: 'Besom 2';
+    font-size: 120px;
+    margin-bottom: 0;
+    margin-left: 60px;
+}
+.instructor-wrap-end p{
+    padding-left: 65px;
+    width: 200px;
+    margin-top: 0;
+    font-family: 'CoreSansE-45Regular';
+}
+.otzivi{
+    height: 1370px;
+    background-image: url(../img/backgr-otzivi.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.otzivi h1{
+    padding-top: 130px;
+}
+.video{
+    margin-top: 110px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carta{
+    margin-top: 100px;
+}
+.coment{
+    height: 840px;
+    background-image: url(../img/backgr-coment.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coment-wrap ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.coment-wrap h2{
+    margin-top: 180px;
+    margin-bottom: 0;
+    font-family: 'Besom 2';
+    font-size: 70px;
+    line-height: 1;
+}
+.coment-wrap li:nth-child(2){
+    margin-top: 0;
+}
+.coment-wrap p{
+    width: 356px;
+    margin-bottom: 45px;
+    font-family: 'CoreSansE-45Regular';
+}
+#user-name{
+    background-color: rgba(216, 216, 216, 20%);
+    border: 1px solid rgba(216, 216, 216, 20%);
+    border-radius: 30px;
+    width: 366px;
+    height: 46px;
+    color: #fff;
+    margin-bottom: 21px;
+    
+}
+#user-name:hover{
+    background-color: rgba(216, 216, 216, 40%);
+}
+#user-name:focus{
+    background-color: rgba(216, 216, 216, 40%);
+    outline: none;
+}
+#user-phone-number{
+    background-color: rgba(216, 216, 216, 20%);
+    border: 1px solid rgba(216, 216, 216, 20%);
+    border-radius: 30px;
+    width: 366px;
+    height: 46px;
+    color: #fff;
+    margin-bottom: 55px;
+    font-family: 'CoreSansE-45Regular';
+}
+#user-phone-number:hover{
+    background-color: rgba(216, 216, 216, 40%);
+}
+#user-phone-number:focus{
+    background-color: rgba(216, 216, 216, 40%);
+    outline: none;
+}
+.send{
+    background-color: transparent;
+    border: none;
+    padding-bottom: 50px;
+    margin-top: 0;
+}
+.send:focus{
+    outline: none;
+}
+
+.coment-end ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 379px;
+    background-color: #fff;
+    width: 950px;
+    height: 100px;
+    padding-top: 100px;
+    
+}
+.coment-end li{
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.footer-main{
+    display: flex;
+    justify-content: center;
+}
+.footer-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 942px;
+}
+.footer-list li:nth-child(1),.footer-list li:nth-child(3){
+    font-family: 'CoreSansE-55Medium'; 
+}
+.footer-list li:nth-child(3){
+    font-size: 18px;
+}
+.footer-list li:nth-child(2){
+    font-family: 'CoreSansE-45Regular';
+    border-bottom: 1px dashed #000;
+    height: 40px;
+}
